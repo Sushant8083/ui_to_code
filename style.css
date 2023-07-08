@@ -1,0 +1,731 @@
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.page1{
+    height: 100%;
+    width: 100%;
+    border-left: 1.5px solid black;
+}
+#menu i{
+    position: absolute;
+    left: 1%;
+    top: 45%;
+    font-size: 30px;
+    font-weight: 600;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    display: flex;
+}
+nav .first{
+    height: 100%;
+    width: 30%;
+    border-right: 1.5px solid black;
+    display: flex;
+}
+nav .first-left {
+    width: 50%;
+    height: 100%;
+    border-right: 1.5px solid black;
+}
+nav .first-right {
+    width: 50%;
+    height: 100%;
+}
+nav .first h4{
+    padding: 7px;
+    font-weight: 600;
+}
+nav .first-left h4:nth-child(1){
+    border-bottom: 1.5px solid black;
+}
+nav .first-right h4:nth-child(1){
+    border-bottom: 1.5px solid black;
+}
+nav .second{
+    height: 100%;
+    width: 35%;
+    border-right: 1.5px solid black;
+    padding: 20px ;
+    text-align: center;
+    background-image: url("https://img.freepik.com/premium-vector/squared-notebook-seamless-pattern-grey-grid-texture-school-notebook-mathematics-grid-paper-sheet-vector-illustration-white-background_192280-928.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav .second h2{
+    font-weight: 600;
+}
+nav .third {
+    height: 100%;
+    width: 15%;
+    border-right: 1.5px solid black;
+}
+nav .fourth {
+    height: 100%;
+    width: 20%;
+}
+nav .fourth h4{
+    font-weight: 600;
+    border-bottom: 1.5px solid black;
+    padding: 8px 5px;
+}
+nav .fourth h5{
+ padding: 8px 5px;
+}
+.page1-content{
+    height:calc(100% - 70px);
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    display: flex;
+}
+.page1-content .page1-left{
+    height: 100%;
+    width: 30%;
+    border-right: 1.5px solid black;
+    padding: 20px;
+}
+.page1-content .page1-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page1-content .page1-right{
+    height: 100%;
+    width: 70%;
+}
+.page1-content .page1-right .row1{
+    height: 25%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    padding-left: 150px;
+}
+@keyframes topdown {
+    0%{
+        visibility: hidden;
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes bottomup {
+    0%{
+        visibility: hidden;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes righttoleft {
+    0%{
+        visibility: hidden;
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes lefttoright {
+    0%{
+        visibility: hidden;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.page1-content .page1-right .row1 h1{
+    font-size: 100px;
+    font-weight: 600;
+}
+.page1-content .page1-right .row2{
+    height: 25%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.page1-content .page1-right .row2 img{
+    height:90px;
+}
+.page1-content .page1-right .row3{
+    height: 25%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    position: relative;
+}
+.page1-content .page1-right .row3 h1{
+    font-size: 100px;
+    font-weight: 600;
+    margin-left: -120px;
+
+}
+.page1-content .page1-right .row3 .yellow-box{
+    height: 60px;
+    width: 65px;
+    background-color: orange;
+    position: absolute;
+    right: 39%;
+    top: 5%;
+    z-index: -1;
+
+}
+.page1-content .page1-right .row4{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+ 
+}
+.page1-content .page1-right .row4 img{
+    height:90px;
+    margin-left: 20px;
+
+}
+.page1-content .page1-right .row4 span{
+    font-size: 100px;
+    font-weight: 600;
+font-family: italic;
+font-style: italic;
+}
+.page1-content .page1-right .row4 h1{
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.page2{
+    height: 100%;
+    width: 100%;
+    border-left: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+.page2 .row1{
+    height: 15%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    display: flex;
+}
+.page2 .row1 .first{
+    height: 100%;
+    width: 30%;
+    border-right: 1.5px solid black;
+}
+.page2 .row1 .second{
+    height: 100%;
+    width: 20%;
+    border-right: 1.5px solid black;
+}
+.page2 .row2{
+        height: 85%;
+        width: 100%;
+        display: flex;
+}
+.page2 .row2 .first{
+    height: 100%;
+    width: 30%;
+    border-right: 1.5px solid black;
+}
+.page2 .row2 .first h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px;
+}
+.page2 .row2 .second{
+    height: 75%;
+    width: 40%;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: relative;
+}
+.page2 .row2 .page2-img1{
+    height: 255px;
+}
+.page2-img1-text h4{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 19%;
+    left: 3%;
+}
+.page2 .row2 .page2-img2{
+    height: 140px;
+}
+.page2-img2-text h4{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 45%;
+    left: 50%;   
+}
+.page2 .row2 .third{
+    height: 75%;
+    width: 15%;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    padding: 10px 30px;
+    position: relative;
+}
+.page2 .row2 .third h1{
+    font-size: 23px;
+    font-weight: 500;
+}
+.page2 .row2 .third h1::before{
+    content: "01";
+    font-size: 12px;
+    font-weight: 500;
+    color: #777;
+    position: absolute;
+    left: 10px;
+}
+.page2 .row2 .third h4{
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 100px;
+}
+.page2 .row2 .fourth{
+    height: 75%;
+    width: 15%;
+    border-bottom: 1.5px solid black;
+    padding: 10px 30px;
+    position: relative;
+}
+.page2 .row2 .fourth h1{
+    font-size: 23px;
+    font-weight: 500;
+}
+.page2 .row2 .fourth h1::before{
+    content: "02";
+    font-size: 12px;
+    font-weight: 500;
+    color: #777;
+    position: absolute;
+    left: 10px;
+}
+.page2 .row2 .fourth h4{
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 100px;
+}
+/* page3 */
+.page3{
+    height: 100%;
+    width: 100%;
+    border-left: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+.page3-row1{
+    height: 85%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    position: relative;
+    display: flex;
+}
+.page3-row1-left{
+    height: 100%;
+    width: 70%;
+    border-right: 1.5px solid black;
+}
+.page3 .page3-row1-left-img1 img{
+    width: 470px;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    animation-name: bottomup;
+    animation-delay: 10s;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.page3 .page3-row1-left-img2 img{
+    width: 200px;
+    position: absolute;
+    top: 18.5%;
+    left:41%;
+    animation-name: lefttoright;
+    animation-delay: 10s;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.page3 .page3-row1-left-img3 img{
+    width: 230px;
+    position: absolute;
+    top: 49%;
+    left:21%;
+    animation-name: righttoleft;
+    animation-delay: 10s;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.page3 .page3-row1-left-img4 img{
+    width: 447px;
+    position: absolute;
+    top: 49%;
+    left:41%;
+    animation-name: topdown;
+    animation-delay: 10s;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.page3-row1-left p{
+    font-size: 12px;
+    width: 220px;
+    font-weight: 500;
+    position: absolute;
+    left: 1%;
+    top: 50%;
+}
+.page3-row1-left-img2-text{
+    position: absolute;
+    left: 41%;
+    top: 6%;
+}
+.page3-row1-left-img2-text h2{
+    font-weight: 500;
+}
+.page3-row1-left-img2-text h3{
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 18px;
+}
+.page3-row1-right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+}
+.page3-row1-right .first{
+    height: 100%;
+    width: 27.5%;
+    border-right: 1.5px solid black;
+}
+.page3-row1-right .second{
+    height: 100%;
+    width: 72.5%;
+}
+.page3-row1-right .second .up{
+    height: 35%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    padding: 10px;
+}
+.page3-row1-right .second .up img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:bottom;
+}
+.page3-row1-right .second .down p{
+    text-align: center;
+    font-size: 14px;
+    padding: 80px 10px 10px 10px;
+    font-weight: 500;
+}
+.page3-row2 {
+    height: 15%;
+    width: 100%;
+    display: flex;
+}
+.page3-row2 .first{
+    height: 100%;
+    width: 30%;
+    border-right: 1.5px solid black;
+}
+.page3-row2 .second{
+    height: 100%;
+    width: 48.26%;
+    border-right: 1.5px solid black;
+}
+/* Page4 */
+.page4{
+    height: 100%;
+    width: 100%;
+    border-left:1.5px solid black ;
+}
+.page4-row1{
+    height: 85%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    display: flex;
+}
+.page4-row1-left{
+    height: 100%;
+    width: 50%;
+    border-right: 1.5px solid black;
+}
+.page4-row1-left-text{
+    height: 30%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    font-size: 12px;
+    padding: 40px 20px;
+}
+.page4-row1-left-image{
+    height: 70%;
+    width: 100%;
+    text-align: center;
+}
+.page4-row1-left-image img{
+    height: 95%;
+    object-fit: cover;
+}
+.page4-row1-right{
+    height: 100%;
+    width: 50%;
+}
+.page4-row1-right .elem{
+    border-bottom: 1.5px solid black;
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.page4-row1-right .elem h1{
+    font-size: 18px;
+    font-weight: 500;
+}
+.page4-row1-right .elem h2{
+    color: #E9401F;
+    font-family: 'Pacifico', cursive;   
+    font-weight: 500;
+    font-size: 18px;
+}
+.see-all img{
+    height: 40px;
+    margin: 15px;
+}
+.page4-row2{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    border-bottom: 1.5px solid black;
+}
+.page4-row2 .first{
+    height: 100%;
+    width: 30%;
+    border-right: 1.5px solid black;
+}
+.page4-row2 .second{
+    height: 100%;
+    width: 50%;
+    border-right: 1.5px solid black;
+}
+/* Page 5 */
+.page5{
+    height: 100%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    border-left: 1.5px solid black;
+}
+.page5-row1{
+    height: 85%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    display: flex;
+}
+.page5-row1-first{
+    height: 100%;
+    width: 40%;
+    border-right: 1.5px solid black;
+    padding-top: 10px;
+}
+.page5-row1-first h1{
+    font-weight: 600;
+    margin-left: 20px;
+}
+.page5-row1-first h1 span{
+    font-weight: 200;
+    font-family: 'Pacifico', cursive;
+}
+.page5-row1-first p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.page5-row1-first h6{
+    font-size: 14px;
+    margin-top: -15px;
+    margin-left: 320px;
+    font-weight: 600;
+}
+.input-form{
+    margin-top: 80px;
+}
+input{
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1.5px solid black;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+}
+.get-in-touch{
+    width: 100%;
+    height: 80px;
+    background-color: #E9401F;
+    text-align: center;
+    margin-top: 56px;
+    border-top: 1.5px solid black;
+}
+.get-in-touch img{
+    height: 35px;
+    margin-top: 18px;
+    object-fit: cover;
+}
+.page5-row1-second{
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    padding: 10px;
+    position: relative;
+}
+.page5-row1-second-img1 {
+    height: 250px;
+}
+.page5-row1-second-img1 img{
+    height: 100%;
+    object-fit: cover;
+}
+.page5-row1-second-img2{
+    height: 450px;
+    width: 390px;
+}
+.page5-row1-second-img2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page5-row1-second-text {
+    position: absolute;
+    top: 19%;
+}
+.page5-row1-second-text .elem{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.page5-row1-second-text .elem h5{
+    padding:8px;
+font-weight: 500;
+font-size: 16px;
+}
+.page5-row2{
+    height: 15%;
+    width: 100%;
+    display: flex;
+}
+.page5-row2 .first{
+    height: 100%;
+    width: 30%;
+    border-right: 1.5px solid black;
+}
+.page5-row2 .second{
+    height: 100%;
+    width: 50%;
+    border-right: 1.5px solid black;
+}
+footer{
+    height: 50%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    border-left: 1.5px solid black;
+}
+footer .row1{
+    height: 85%;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    display: flex;
+}
+footer .row1 .first{
+    height: 100%;
+    width: 20%;
+    border-right: 1.5px solid black;
+    background-image: url(./footer.png);
+    background-size: cover;
+}
+footer .row1 .second{
+    height: 100%;
+    width: 35%;
+    border-right: 1.5px solid black;
+}
+footer .row1 .third{
+    height: 100%;
+    width: 45%;
+}
+footer .row1 .third h2{
+    padding: 8px;
+    border-bottom: 1.5px solid black;
+    font-weight: 600;
+}
+footer .row1 .third h2:nth-last-child(1){
+    border: none;
+}
+footer .row2{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+footer .row2 p{
+    padding: 12px;
+    font-size: 15px;
+}
+.footer-socials{
+    display: flex;
+    gap: 20px;
+}
+.footer-socials h4{
+    border-right: 1.5px solid black;
+    height: 100%;
+    padding: 9px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.footer-socials h4:nth-child(1){
+    border-left: 1.5px solid black;
+    padding-left: 25px;
+}
+.footer-socials h4:nth-last-child(1){
+    border: none;
+}
